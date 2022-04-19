@@ -1,4 +1,4 @@
-baseURL = "https://burlab.rbind.io"
+baseURL = "http://www.burlab.ch"
 theme = "hugo-apero"
 languageCode = "en"
 title = "Bo's personal website"
