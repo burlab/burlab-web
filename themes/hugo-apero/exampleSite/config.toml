@@ -1,8 +1,8 @@
-baseURL = "https://burlab.rbind.io"
+baseURL = "/"
 theme = "hugo-apero"
 languageCode = "en"
-title = "Bo's personal website"
-author = "Bo Burla"
+title = "Hugo Apéro"
+author = "Alison Hill"
 copyright = "" # set to override the auto generated copyright using org info and now year
 googleAnalytics = ""
 disqusShortname = "" # see params.utterances to use utterances instead of Disqus
@@ -28,11 +28,11 @@ enableEmoji = true
     style = "github"
     
 [params]
-  orgName = "Bo Burla"
-  orgLocal = "-"
-  description = "config toml params description"
-  favicon = "/img/Burla_logo_MOR_V2022_V3.png"
-  logo = "/img/Burla_logo_MOR_V2022_V3.png"
+  orgName = "RStudio"
+  orgLocal = "Anywhere"
+  description = "A modern, beautiful, and easily configurable blog theme for Hugo."
+  favicon = "/img/favicon.ico"
+  logo = "/img/blogophonic-mark-dark.png"
   mainSections = ["blog", "project", "talk"]
   navallcaps = true
   # show/hide social icons in site header & footer
@@ -43,12 +43,12 @@ enableEmoji = true
   # Place image file in `static` folder and specify image name here.
   sharing_image = "/img/papillons.jpg"
   # Twitter username (without @). Used when a visitor shares your site on Twitter.
-  twitter = "bjburbo"
+  twitter = "apreshill"
   
   # use a built-in color theme
   # one of: forest / grayscale / peach / plum /
   #         poppy / sky / violet / water 
-  theme = "grayscale"
+  theme = "sky"
   
   # or, leave theme empty & make your own palette
   # see docs at https://hugo-apero.netlify.app/blog/color-themes/
@@ -61,17 +61,17 @@ enableEmoji = true
   # serif options: Fraunces / EB Garamond / Bitter
   # sans-serif options: Commissioner / Atkinson Hyperlegible / Metropolis
   # if you import your own fonts, name them here too
-  customtextFontFamily = ""
-  customheadingFontFamily = ""
+  customtextFontFamily = "Commissioner"
+  customheadingFontFamily = "Fraunces"
   # alternatively, leave empty and select basic font options: sans-serif or serif
   # for more http://tachyons.io/docs/typography/font-family/
-  textFontFamily = "Helvetica"
-  headingFontFamily = "Helvetica"
+  textFontFamily = "sans-serif"
+  headingFontFamily = "sans-serif"
 
   # Configuration of https://utteranc.es/ for comments
   [params.utterances]
     use_utterances = true
-    repo_name = "burlab/burlab-web"
+    repo_name = "apreshill/apero"
     issue_term = "pathname" # url, pathname, or title
     theme = "boxy-light"
     label = "comments :crystal_ball:"
@@ -88,20 +88,31 @@ enableEmoji = true
   [[params.social]]
       icon      = "github" # icon name without the 'fa-'
       icon_pack = "fab"
-      url       = "https://github.com/burlab"
+      url       = "https://github.com/apreshill/apero"
+  [[params.social]]
+      icon      = "facebook-square" # icon name without the 'fa-'
+      icon_pack = "fab"
+      url       = "https://www.facebook.com/hashtag/ap%C3%A9ro"
+  [[params.social]]
+      icon      = "instagram" # icon name without the 'fa-'
+      icon_pack = "fab"
+      url       = "https://www.instagram.com/explore/tags/apero/"
   [[params.social]]
       icon      = "twitter" # icon name without the 'fa-'
       icon_pack = "fab"
-      url       = "https://twitter.com/bjburbo"
+      url       = "https://twitter.com/hashtag/apéro"
   [[params.social]]
-      icon      = "linkedin" # icon name without the 'fa-'
-      icon_pack = "fab"
-      url       = "https://www.linkedin.com/in/bburla"
-  [[params.social]]
-      icon      = "google-scholar" # icon name without the 'fa-'
+      icon      = "impactstory" # icon name without the 'fa-'
       icon_pack = "ai"
-      url       = "https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=Bo+Burla"
-
+      url       = "https://impactstory.org/u/0000-0002-8082-1890"
+  [[params.social]]
+      icon      = "orcid" # icon name without the 'fa-'
+      icon_pack = "ai"
+      url       = "http://orcid.org/0000-0002-8082-1890"
+  [[params.social]]
+      icon      = "rss" # icon name without the 'fa-'
+      icon_pack = "fas"
+      url       = "/blog/index.xml"
 
 [taxonomies]
   category = "categories"
@@ -112,7 +123,7 @@ enableEmoji = true
   # Configure header 
   [[menu.header]]
     name = "About"
-    title = "About"
+    title = "About Blogophonic"
     url = "/about/"
     weight = 1
   [[menu.header]]
@@ -130,6 +141,16 @@ enableEmoji = true
     title = "Talks"
     url = "/talk/"
     weight = 4
+  [[menu.header]]
+    name = "A collection"
+    title = "A collection"
+    url = "/collection/"
+    weight = 5
+  [[menu.header]]
+    name = "Elements"
+    title = "Element Page"
+    url = "/elements/"
+    weight = 6
     
   # Configure footer  
   [[menu.footer]]
