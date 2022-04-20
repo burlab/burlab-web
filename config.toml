@@ -33,7 +33,7 @@ enableEmoji = true
   description = "config toml params description"
   favicon = "/img/Burla_logo_MOR_V2022_V3.png"
   logo = "/img/Burla_logo_MOR_V2022_V3.png"
-  mainSections = ["blog", "project", "talk"]
+  mainSections = ["blog", "project"]
   navallcaps = true
   # show/hide social icons in site header & footer
   # configure social icons and links below in [[params.social]]
@@ -114,22 +114,18 @@ enableEmoji = true
     name = "About"
     title = "About"
     url = "/about/"
-    weight = 1
+    weight = 3
   [[menu.header]]
     name = "Blog"
     title = "Blog"
     url = "/blog/"
-    weight = 2
+    weight = 1
   [[menu.header]]
     name = "Projects"
     title = "Project Portfolio"
     url = "/project/"
-    weight = 3
-  [[menu.header]]
-    name = "Talks"
-    title = "Talks"
-    url = "/talk/"
-    weight = 4
+    weight = 2
+
     
   # Configure footer  
   [[menu.footer]]
@@ -142,18 +138,14 @@ enableEmoji = true
     title = "Contact form"
     url = "/contact/"
     weight = 2
-  [[menu.footer]]
-    name = "Contributors"
-    title = "Contributors"
-    url = "/contributors/"
-    weight = 3
+
 
 # see https://gohugo.io/about/hugo-and-gdpr/    
 [privacy]
   [privacy.disqus]
     disable = false
   [privacy.googleAnalytics]
-    disable = false
+    disable = true
     anonymizeIP = true
     respectDoNotTrack = true
   [privacy.instagram]
